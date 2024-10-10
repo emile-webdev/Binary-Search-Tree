@@ -55,9 +55,9 @@ class Tree {
             } else if (node.right === null) {
                 return node.left;
             }
-            // Node with two children, get inorder successor(smallest in right subtree)
+            // Node with two children, get in-order successor(smallest in right subtree)
             node.data = this.minValue(node.right);
-            // Delete inorder successor
+            // Delete in-order successor
             node.right = this.deleteItem(node.data, node.right);
         }
         return node;

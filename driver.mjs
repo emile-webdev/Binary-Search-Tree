@@ -39,17 +39,19 @@ console.log("Is the tree unbalanced after insertions?", !tree.isBalanced());
 tree.reBalance();
 
 // Confirm that the tree is balanced
-console.log("Is the tree balanced after rebalancing?", tree.isBalanced());
+console.log("Is the tree balanced after re-balancing?", tree.isBalanced());
 
 // Print out all elements in level, pre, post, and in order
-console.log("Level Order after rebalancing:");
+console.log("Level Order after re-balancing:");
 tree.levelOrder(node => console.log(node.data));
 
-console.log("In Order after rebalancing:");
+console.log("In Order after re-balancing:");
 tree.inOrder(node => console.log(node.data));
 
-console.log("Pre Order after rebalancing:");
+console.log("Pre Order after re-balancing:");
 tree.preOrder(node => console.log(node.data));
 
-console.log("Post Order after rebalancing:");
+console.log("Post Order after re-balancing:");
 tree.postOrder(node => console.log(node.data));
+
+tree.prettyPrint();
